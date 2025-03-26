@@ -3,6 +3,7 @@ import axios from "axios";
 import ContactTable from "../components/ContactTable";
 import AddContact from "../components/AddContact";
 import SearchComponent from "../components/Search";
+import ExportCSVButton from "../components/ExportCsv";
 import "../css/page.css"
 
 const ContactsPage = () => {
@@ -27,6 +28,7 @@ const ContactsPage = () => {
             <h1>Contact Manager</h1>
 
             <SearchComponent setContacts={setContacts}/>
+            <ExportCSVButton />
             <button className="add-contact-btn" onClick={() => setIsAddModalOpen(true)}>Add Contact</button>
 
             <ContactTable contacts={contacts} refreshContacts={fetchContacts} />
