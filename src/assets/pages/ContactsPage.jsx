@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import ContactTable from "../components/ContactTable";
 import AddContact from "../components/AddContact";
+import SearchComponent from "../components/Search";
 import "../css/page.css"
 
 const ContactsPage = () => {
@@ -24,6 +25,8 @@ const ContactsPage = () => {
     return (
         <div className="contacts-page">
             <h1>Contact Manager</h1>
+
+            <SearchComponent setContacts={setContacts}/>
             <button className="add-contact-btn" onClick={() => setIsAddModalOpen(true)}>Add Contact</button>
 
             <ContactTable contacts={contacts} refreshContacts={fetchContacts} />

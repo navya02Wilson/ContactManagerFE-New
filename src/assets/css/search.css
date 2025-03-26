@@ -1,18 +1,26 @@
-.search-bar {
-    width: 100%;
-    max-width: 400px;
-    margin-bottom: 15px;
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
 }
 
-.search-input {
-    width: 100%;
+.search-container input {
+    width: 300px;
     padding: 8px;
+    margin-right: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 14px;
 }
 
-.search-input:focus {
-    outline: none;
-    border-color: #007bff;
+.search-container button {
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    background-color: #0056b3;
 }
