@@ -4,7 +4,7 @@ import ContactTable from "../components/ContactTable";
 import AddContact from "../components/AddContact";
 import SearchComponent from "../components/Search";
 import ExportCSVButton from "../components/ExportCsv";
-import "../css/page.css"
+import "../assets/css/page.css"
 
 const ContactsPage = () => {
     const [contacts, setContacts] = useState([]);

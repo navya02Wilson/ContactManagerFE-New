@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import "../css/modal.css"
+import "../assets/css/modal.css"
 
 const AddContact = ({ isOpen, onClose, refreshContacts }) => {
     const [contact, setContact] = useState({ firstName: "", lastName: "", email: "", phoneNumber: "", address: "" });

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import "../css/search.css"
+import "../assets/css/search.css"
 
 const SearchComponent = ({ setContacts }) => {
     const [searchQuery, setSearchQuery] = useState("");

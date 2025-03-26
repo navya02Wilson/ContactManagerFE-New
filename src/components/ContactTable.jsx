@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import EditContact from "./EditContact";
 import DeleteContact from "./DeleteContact";
-import "../css/contactTable.css"
+import "../assets/css/contactTable.css"
 
 const ContactTable = ({ contacts, refreshContacts }) => {
     const [selectedContact, setSelectedContact] = useState(null);

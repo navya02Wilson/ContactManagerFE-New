@@ -1,6 +1,6 @@
 import React from "react";
 import axios from "axios";
-import "../css/modal.css"
+import "../assets/css/modal.css"
 
 const DeleteContact = ({ isOpen, onClose, contactId, refreshContacts }) => {
     const handleDelete = async () => {

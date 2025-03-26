@@ -1,5 +1,5 @@
 import './App.css'
-import ContactsPage from './assets/pages/ContactsPage'
+import ContactsPage from './pages/ContactsPage'
 
 function App() {
   
